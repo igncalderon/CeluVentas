@@ -1,0 +1,53 @@
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Celuventas</h1>
+    <h2>Samsung</h2>
+  </div>
+</div>
+  <body>
+	{{#each modelos}}
+       
+
+              
+	<div class="container">
+		<div class="card">
+			<div class="container-fliud">
+				<div class="wrapper row">
+					<div class="preview col-md-6">
+						<div class="preview-pic tab-content">
+						  <div class="tab-pane active" id="pic-1"><img src= {{{this.Imagen}}} /></div>
+						
+						</div>	
+					</div>
+					<div class="details col-md-6">
+						<h3 class="product-title">{{{this.Marca}}} {{{this.Modelo}}} </h3>
+						<div class="rating">
+							<div class="stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+							</div>
+						</div>
+						<p class="product-description">Este maravilloso celular es de color {{{this.Color}}} y posee {{{this.Capacidad}}}GB </p>
+						<h4 class="price">current price: <span>${{{this.Precio}}}</span></h4>
+						
+						
+						
+							<div class="action">
+							{{!-- <input href="/samsungcomprar2" class="add-to-cart btn btn-default" value="Comprar"type="button"> --}}
+							 <a href="/telefono/{{ this.ID }}" type="button" class="btn btn-primary">Comprar</a>
+							
+						</div>
+						
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+      {{/each}}  
+  </body>
+</html>

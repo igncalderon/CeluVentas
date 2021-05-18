@@ -1,0 +1,104 @@
+<section class="section pb-5">
+
+  <!--Section heading-->
+  <h2 class="section-heading h1 pt-4">Consultenos</h2>
+  <!--Section description-->
+  <p class="section-description pb-4">En celuventas no tendremos problemas en responder las consultas de los usuarios, enviennos un mail y a las horas les respondemos.</p>
+
+  <div class="row">
+
+    <!--Grid column-->
+    <div class="col-lg-5 mb-4">
+
+      <!--Form with header-->
+      <div class="card">
+
+        <div class="card-body">
+          <!--Header-->
+          <div class="form-header accent-1">
+      {{#if texto}}
+          <h3>{{{texto}}}</h3>
+      {{/if}}
+
+            <h3><i class="fas fa-envelope"></i>Contactenos a Nosotros</h3>
+          </div>
+
+          
+          <br>
+
+          <!--Body-->
+          <form method="POST" action="/contactar">
+            <div class="md-form">
+              <i class="fas fa-user prefix grey-text"></i>
+              <label for="form-name">Tu nombre</label>
+              <input required type="text" name="nombre" id="form-name" class="form-control">
+            </div>
+
+            <div class="md-form">
+              <i class="fas fa-envelope prefix grey-text"></i>
+              <label for="form-email">Tu email</label>
+              <input required type="text" name="email" id="form-email" class="form-control">
+            </div>
+
+            <div class="md-form">
+              <i class="fas fa-pencil-alt prefix grey-text"></i>
+              <label for="form-text">Consulta</label>
+              <textarea id="form-text" name="consulta" class="form-control md-textarea" rows="3"></textarea>
+            </div>
+
+            <div class="text-center mt-4">
+              {{!-- <button class="btn btn-light-blue">Enviar</button> --}}
+              <input type="submit" value="Enviar" />
+            </div>
+          </form>
+
+        </div>
+
+      </div>
+      <!--Form with header-->
+
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-lg-7">
+
+      <!--Google map-->
+      <div id="map-container-google-11" class="z-depth-1-half map-container-6" style="height: 400px">
+        <iframe src="https://maps.google.com/maps?q=new%20delphi&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+
+      <br>
+      <!--Buttons-->
+      <div class="row text-center">
+        <div class="col-md-4">
+          <a class="btn-floating blue accent-1"><i class="fas fa-map-marker-alt"></i></a>
+          <img src="https://image.flaticon.com/icons/png/512/67/67872.png" width="20">
+          <p>Yapeyu 197</p>
+          <p>Buenos Aires, Argentina</p>
+        </div>
+
+        <div class="col-md-4">
+          <a class="btn-floating blue accent-1"><i class="fas fa-phone"></i></a>
+          
+          <img src="https://image.flaticon.com/icons/png/512/15/15104.png" width="20">
+          <p>15 3655 2282</p>
+          <p>Lunes - Viernes, 10.00hs - 19.00hs</p>
+        </div>
+
+        <div class="col-md-4">
+          <a class="btn-floating blue accent-1"><i class="fas fa-envelope"></i></a>
+          <img src="https://www.stickpng.com/assets/thumbs/584856a0e0bb315b0f7675a9.png" width="20">
+          <p> </p>
+          <p>celuventas@gmail.com</p>
+          
+        </div>
+      </div>
+
+    </div>
+    <!--Grid column-->
+
+  </div>
+
+</section>

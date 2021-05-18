@@ -1,0 +1,83 @@
+ {{!-- <div class="container">
+      <div class="row">
+          <div class="col-12" style="margin-top: 100px margin-bottom:300px">
+
+            {{#if error}}
+              <div class="alert alert-danger" role="alert">
+                {{{ error }}}
+              </div>
+            {{/if}}
+
+            {{#if exito}}
+              <div class="alert alert-success" role="alert">
+                {{{ exito }}}
+              </div>
+            {{/if}}
+
+                 <form action="/registrar" method="POST">
+                    <div class="form-group">
+                        <label for="Nombre de Usuario">Nombre de usuario</label>
+                        <input type="text" class="form-control" name="nombre" value="" placeholder="Ingrese el nombre de Usuario" required>
+                    </div>
+                      <div class="form-group">
+                        <label for="Contraseña">Contraseña</label>
+                        <input type="password" class="form-control"  name="contrasena" value="" placeholder="Ingrese la contraseña" required>
+                    </div>
+                      
+                      <div class="form-group">
+                        <input type="submit" id="agregar" value="Registrarme" />
+                    </div>
+                 </form>
+
+          </div>
+      </div>
+  </div> --}}
+
+
+
+  <div class="container">
+   <div id="row">
+<div class="col-md-6 col-md-offset-3 " style="margin-top: 100px; margin-bottom:300px;">
+  
+  
+  
+
+  
+      {{#if error}}
+              <div class="alert alert-danger" role="alert">
+                {{{ error }}}
+              </div>
+            {{/if}}
+
+            {{#if exito}}
+              <div class="alert alert-success" role="alert">
+                {{{ exito }}}
+              </div>
+            {{/if}}
+<form action="/registrar" method="POST">
+                    <div class="form-group col-md-12">
+                        <label for="Nombre de Usuario">Nombre de usuario</label>
+                       <input type="text" class="form-control" name="nombre" value="" placeholder="Ingrese el nombre de Usuario" required>
+                    </div>
+                      <div class="form-group col-md-12">
+                        <label for="Contrasena">Contraseña</label>
+                        <input type="password" class="form-control"  name="contrasena" value="" placeholder="Ingrese la contraseña" required>
+                    </div>
+                   <div class="form-group col-md-6">
+                    <label for="Email">Email</label>
+                    <input type="text" class="form-control" name="email" value="" placeholder="" required>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputCity">Edad</label>
+                    <input type="text" class="form-control" name="edad" value="" placeholder="" required>
+                  </div>
+                  <br>
+                      <div class="form-group text-center">
+                        <input type="submit" class='btn btn-primary' value="Log In" />
+                    </div>
+                 </form>
+</div>
+</div>
+</div>
+  
+ 

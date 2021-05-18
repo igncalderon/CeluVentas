@@ -1,0 +1,76 @@
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1>Celuventas</h1>
+    <h2>Líderes en venta de celulares<span class="badge badge-secondary"></span></h2>
+  </div>
+</div>
+
+<div class="container">
+    <div class="row">
+
+        {{#each modelos}}
+            <div class="col-md-4">
+                <div class="card" >
+                    <img class="card-img-top" style="max-width: 264px;max-height: 264px;" src={{this.Imagen}}  alt="Card image cap">
+                    <div class="card-body text-center">
+                        <p class="card-text text-center">{{this.Marca}} {{this.Modelo}} {{this.Capacidad}}GB</p>
+                          
+                
+                          <a href="/telefono/{{ this.ID }}"  class="btn btn-primary ">Comprar</a>
+                          
+                    </div>
+                    </div>
+            </div>
+        {{/each}}    
+
+    </div>
+</div>
+
+{{!-- 
+<div class="container mb-5 mt-5">
+    <div class="pricing card-deck flex-column flex-md-row mb-3">
+        
+  {{#each modelos}}
+        <div class="card card-pricing text-center px-3 mb-4">
+            <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">{{this.Marca}} </span>
+            <div class="bg-transparent card-header pt-4 border-0">
+                <h3 class="h3 font-weight-normal text-center mb-0" data-pricing-value="15" style="margin-bottom: 5px !important;">{{this.Marca}} {{this.Modelo}} {{this.Capacidad}}GB {{this.Color}}</h3>
+                <img src={{this.Imagen}} class="rounded mx-auto d-block" width="200" height="200">
+            </div>
+            <div class="card-body pt-0">
+                <ul class="list-unstyled mb-4">
+                    <li> <h4> ${{this.Precio}}  </h4> </li>
+                </ul>
+                <a href="/telefono/{{ this.ID }}"  class="btn btn-primary">Comprar</a>
+            </div>
+        </div>
+  {{/each}}          
+          
+    </div>
+</div>
+
+
+<div class="container mb-5 mt-5">
+    <div class="pricing card-deck flex-column flex-md-row mb-3">
+        
+  {{#each modelos2}}
+        <div class="card card-pricing text-center px-3 mb-4">
+            <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">{{this.Marca}} </span>
+            <div class="bg-transparent card-header pt-4 border-0">
+                <h3 class="h3 font-weight-normal text-primary text-center mb-0" data-pricing-value="15">{{this.Marca}} {{this.Modelo}} {{this.Capacidad}}GB {{this.Color}} ${{this.Precio}} </h3>
+                <img src={{this.Imagen}} class="rounded mx-auto d-block" width="200" height="200">
+            </div>
+            <div class="card-body pt-0">
+                <ul class="list-unstyled mb-4">
+                    <li>Up to 5 users</li>
+                </ul>
+                <a href="/telefono/{{ this.ID }}" type="button" class="btn btn-outline-secondary mb-3">Comprar</a>
+            </div>
+        </div>
+  {{/each}}          
+          
+    </div>
+</div>
+
+ --}}

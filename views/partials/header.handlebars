@@ -1,0 +1,60 @@
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="margin-bottom:0px;">
+  <a class="navbar-brand" href="/">Celuventas</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      {{#if usuario}}
+
+      <li class="nav-item ">
+        <a class="nav-link" href="/pantallaiphone">Iphone</a>
+      </li>
+      <li class="nav-item ">
+        <a class=" nav-link" href="/pantallasamsung">Samsung</a>
+
+      </li>
+      <li class="nav-item ">
+
+        <a class=" nav-link" href="/Contactenos">Contactenos</a>
+
+      </li>
+      {{!-- <li class="nav-item ">
+        <a class=" nav-link" href="/compras">Mis Compras</a>
+
+      </li> --}}
+
+      {{else}}
+ <li class="nav-item ">
+        <a class="nav-link" href="/pantallaiphone">Iphone</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="/pantallasamsung">Samsung</a>
+
+      </li>
+       <li class="nav-item ">
+              <a class="nav-link" href="/login">Iniciar Sesion</a>
+      </li>
+      <li class="nav-item ">
+      <a class="nav-link" href="/registrar">Registrarse</a>
+      </li>
+       <li class="nav-item ">
+      <a class="nav-link" href="/Contactenos">Contactenos</a>
+      </li>
+     
+      {{/if}}
+    </ul>
+    <div class="pull-right">
+    {{#if usuario}}
+
+    <form action="/cerrarsesion">
+      <span style="color:white;">{{{usuario}}}</span>
+      <input type="submit" class="btn btn-link" value="Cerrar sesion">
+    </form>
+    {{/if}}
+  </div>
+  </div>
+</nav>
